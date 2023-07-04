@@ -1,9 +1,9 @@
 import faker from "faker";
 import React, { useContext } from "react";
-import { Cart } from "../Context";
+import { Cart, CartState } from "../Context";
 
 const SingleProduct = ({ prod }) => {
-  const { cart, setCart } = useContext(Cart);
+    const { cart,setCart } = CartState();
   return (
     <div className="products">
       <div className="productDesc">
